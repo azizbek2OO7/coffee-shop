@@ -1,0 +1,808 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+:root{
+    --inter-family: Inter;
+    --righteous: Righteous;
+    --urbanist: Urbanist;
+}
+
+::selection{
+    background-color: chocolate;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+/* header */
+
+header{
+    background-image: url(./images/header-img.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+}
+
+.navbar{
+    padding: 15px 120px;
+    background: #1C1814;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-family: var(--inter-family);
+    position: fixed;
+    width: 100%;
+    z-index: 1;
+}
+
+.left-navbar{
+    display: flex;
+    align-items: center;
+    gap: 45px;
+}
+
+.left-navbar a:first-child{
+    font-weight: 700;
+    color: #C99E71;
+}
+
+.navbar a{
+    font-weight: 400;
+    font-size: 18px;
+    color: #FFFFFF;
+    transition: .3s all;
+}
+
+.navbar a:hover{
+    color: #C99E71;
+}
+
+.right-navbar{
+    display: flex;
+    align-items: center;
+    gap: 45px;
+}
+
+.right-navbar .navbar-search{
+    display: flex;
+    align-items: center;
+    gap: 50px;
+}
+
+.navbar-search img{
+    cursor: pointer;
+}
+
+/* hero */
+
+.hero{
+    padding: 200px 180px 0 180px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+}
+
+.hero-content h1{
+    font-weight: 400;
+    font-size: 72px;
+    color: #FFFFFF;
+    font-family: var(--righteous);
+    width: 529px;
+}
+
+.hero-content p{
+    width: 511px;
+    font-weight: 500;
+    font-size: 20px;
+    font-family: var(--urbanist);
+    text-transform: capitalize;
+    color: rgba(255, 255, 255, 0.8);
+    line-height: 1.6;
+    margin: 32px 0 64px 0;
+}
+
+.hero-content button{
+    font-weight: 700;
+    font-size: 18px;
+    font-family: var(--inter-family);
+    color: #FFFFFF;
+    background: #C99E71;
+    padding: 23px 40px;
+    border: 1px solid #C99E71;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: .3s;
+}
+
+.hero-content button:hover{
+    color: #C99E71;
+    background: transparent;
+}
+
+.hero .hero-video{
+    text-align: center;
+    font-weight: 400;
+    font-size: 16px;
+    font-family: var(--inter-family);
+    text-transform: uppercase;
+    color: #FFFFFF;
+    position: relative;
+}
+
+.hero-video .play{
+    margin-bottom: 20px;
+    border: 1.5px solid #FFFFFF;
+    border-radius: 50%;
+    width: 70px;
+    height: 70px;
+    cursor: pointer;
+    position: relative;
+    left: 10px;
+}
+
+.hero-video img{
+    position: absolute;
+    top: 25%;
+    left: 42%;
+}
+
+/* main */
+
+main{
+    background: #14110E;
+    padding: 140px 180px 0 180px;
+}
+
+.coffe-process{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.coffe-process-box h2{
+    font-weight: 400;
+    font-size: 24px;
+    font-family: var(--righteous);
+    color: #C99E71;
+    margin-bottom: 24px;
+}
+
+.coffe-process-box h2 span{
+    color: #FFFFFF;
+    margin-left: 6px;
+}
+
+/* our-history */
+
+.our-history{
+    margin-top: 140px;
+    display: flex;
+    align-items: center;
+    gap: 26px;
+}
+
+.our-history .our-history-img{
+    display: flex;
+    align-items: center;
+    gap: 26px;
+}
+
+.our-history-img .our-history-two-img{
+    display: flex;
+    flex-direction: column;
+    gap: 26px;
+}
+
+.our-history .our-history-content{
+    background: #1C1814;
+    padding: 120px 56px;
+    height: 635px;
+}
+
+.our-history-content h3{
+    font-weight: 600;
+    font-size: 18px;
+    color: #C99E71;
+    font-family: var(--urbanist);
+}
+
+.our-history-content h1{
+    width: 398px;
+    font-weight: 400;
+    font-size: 48px;
+    font-family: var(--righteous);
+    color: #FFFFFF;
+    margin: 16px 0 40px 0;
+}
+
+.our-history-content p{
+    font-weight: 500;
+    font-size: 16px;
+    font-family: var(--urbanist);
+    text-transform: capitalize;
+    color: rgba(255, 255, 255, 0.8);
+    opacity: 0.8;
+    line-height: 1.7;
+    width: 398px;
+}
+
+/* product */
+
+.product{
+    margin-top: 140px;
+    text-align: center;
+}
+
+.product .product-top{
+    text-align: center;
+    font-weight: 600;
+    font-size: 18px;
+    font-family: var(--urbanist);
+    color: #C99E71;
+    margin-bottom: 56px;
+}
+
+.product-top h1{
+    margin-top: 6px;
+    font-weight: 400;
+    font-size: 48px;
+    font-family: var(--righteous);
+    color: #FFFFFF;
+}
+
+.product-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.product .product-box{
+    text-align: center;
+    background: #121315;
+    padding: 48px 48px 40px 48px;
+    width: 366px;
+    transition: .3s;
+}
+
+.product .product-box:hover{
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+
+.product-box h2{
+    font-weight: 400;
+    font-size: 24px;
+    font-family: var(--righteous);
+    text-transform: uppercase;
+    color: #FFFFFF;
+    margin: 36px 0 38px 0;
+}
+
+.product-box .product-box-footer{
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    background: #C99E71;
+    border: 1px solid #C99E71;
+    border-radius: 4px;
+    font-weight: 600;
+    font-size: 18px;
+    font-family: var(--urbanist);
+    color: #FFFFFF;
+    width: 169px;
+    padding: 12px 20px;
+    cursor: pointer;
+    transition: .3s;
+}
+
+.product-box .product-box-footer:hover{
+    background-color: transparent;
+    color: #C99E71;
+}
+
+.product-box-same .product-box-top{
+    margin: 37px 0 0 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 14px;
+    font-weight: 500;
+    font-size: 16px;
+    font-family: var(--urbanist);
+    text-transform: uppercase;
+    color: #C99E71;
+}
+
+.product-box-same h2{
+    margin: 20px 0;
+}
+
+.product-box-same p.product-box-price{
+    font-weight: 600;
+    font-size: 18px;
+    font-family: var(--urbanist);
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+
+.product-box-same p.product-box-price span{
+    color: #C99E71;
+}
+
+.product > button{
+    margin-top: 56px;
+    font-weight: 700;
+    font-size: 18px;
+    font-family: var(--inter-family);
+    text-transform: uppercase;
+    color: #FFFFFF;
+    background: #C99E71;
+    border: 1px solid #C99E71;
+    border-radius: 4px;
+    padding: 20px 36px 18px 36px;
+    cursor: pointer;
+    transition: .3s;
+}
+
+.product > button:hover{
+    background-color: transparent;
+    color: #C99E71;
+}
+
+
+/* coffe-machine */
+
+.coffe-machine{
+    margin-top: 140px;
+    background: #1C1814;
+    display: flex;
+    align-items: center;
+    gap: 160px;
+    padding: 72px 80px 72px 169px;
+}
+
+.coffe-machine-content h1{
+    font-weight: 400;
+    font-size: 48px;
+    font-family: var(--righteous);
+    color: #FFFFFF;
+    width: 501px;
+}
+
+.coffe-machine-content p{
+    font-weight: 500;
+    font-size: 16px;
+    font-family: var(--urbanist);
+    text-transform: capitalize;
+    color: rgba(255, 255, 255, 0.8);
+    opacity: 0.8;
+    margin: 36px 0;
+    line-height: 1.7;
+    width: 535px;
+}
+
+.coffe-machine-content button{
+    font-weight: 700;
+    font-size: 18px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    background: #C99E71;
+    border: 1px solid #C99E71;
+    border-radius: 4px;
+    padding: 20px 36px 18px 36px;
+    cursor: pointer;
+    transition: .3s;
+}
+
+.coffe-machine-content button:hover{
+    background-color: transparent;
+    color: #C99E71;
+}
+
+/* menu */
+
+.menu{
+    margin-top: 140px;
+}
+
+.menu .menu-top{
+    text-align: center;
+    font-weight: 600;
+    font-size: 18px;
+    font-family: var(--urbanist);
+    color: #C99E71;
+    margin-bottom: 56px;
+}
+
+.menu-top h1{
+    margin-top: 6px;
+    font-weight: 400;
+    font-size: 48px;
+    font-family: var(--righteous);
+    color: #FFFFFF;
+}
+
+.menu-main-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.menu-container{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.menu .menu-box{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 565px;
+    padding: 24px;
+    border: 1px solid #32323D;
+    transition: .3s;
+}
+
+.menu .menu-box:hover{
+    box-shadow: #3b332b 0px 3px 12px;
+}
+
+.menu-box .menu-box-img{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    font-weight: 400;
+    font-size: 18px;
+    color: #FFFFFF;
+    font-family: var(--righteous);
+}
+
+.menu-box p{
+    font-weight: 600;
+    font-size: 18px;
+    color: #C99E71;
+    font-family: var(--urbanist);
+}
+
+/* customers */
+
+.customers{
+    margin-top: 140px;
+    font-family: var(--urbanist);
+}
+
+.customers .customers-top{
+    text-align: center;
+    font-weight: 600;
+    font-size: 18px;
+    font-family: var(--urbanist);
+    color: #C99E71;
+    margin-bottom: 56px;
+}
+
+.customers-top h1{
+    margin-top: 6px;
+    font-weight: 400;
+    font-size: 48px;
+    font-family: var(--righteous);
+    color: #FFFFFF;
+}
+
+.customers-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.customers .customers-box{
+    background: #1C1814;
+    padding: 40px 40px 37px 40px;
+    width: 565px;
+}
+
+.customers-box .customers-box-top{
+    display: flex;
+    align-items: center;
+    gap: 24px;
+    margin-bottom: 28px;
+}
+
+.customers-box-top p{
+    font-weight: 500;
+    font-size: 16px;
+    text-transform: capitalize;
+    color: rgba(255, 255, 255, 0.8);
+    opacity: 0.8;
+    line-height: 1.7;
+}
+
+.customers-box-bottom{
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+}
+
+.customers-box-bottom h2{
+    font-weight: 500;
+    font-size: 18px;
+    color: #FFFFFF;
+    margin-bottom: 8px;
+}
+
+.customers-box-bottom p{
+    font-weight: 500;
+    font-size: 14px;
+    text-transform: capitalize;
+    color: rgba(255, 255, 255, 0.5);
+    opacity: 0.8;
+}
+
+.customers-footer{
+    margin-top: 36px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.customers-footer-left h2{
+    font-weight: 600;
+    font-size: 20px;
+    color: #C99E71;
+    font-family: var(--urbanist);
+    margin-bottom: 10px;
+}
+
+.customers-footer-left img:last-child{
+    margin-left: -6px;
+}
+
+.customers-footer-right{
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.customers-footer-right img:first-child{
+    padding: 16px;
+    border-radius: 50px;
+    transition: .2s;
+}
+
+.customers-footer-right img:first-child:active{
+    background: #C99E71;
+}
+
+/* reservation */
+
+.reservation{
+    margin-top: 140px;
+    display: flex;
+    align-items: center;
+    background: #1C1814;
+}
+
+.reservation-content{
+    padding: 72px 48px;
+    text-align: center;
+}
+
+.reservation-content h2{
+    font-weight: 600;
+    font-size: 18px;
+    font-family: var(--urbanist);
+    color: #C99E71;
+    margin-bottom: 12px;
+}
+
+.reservation-content h1{
+    font-weight: 400;
+    font-size: 48px;
+    font-family: var(--righteous);
+    color: #FFFFFF;
+    margin-bottom: 56px;
+}
+
+.reservation-content form{
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.reservation-content form input{
+    padding: 14px 20px;
+    background: #302a24;
+    border: none;
+    width: 489px;
+}
+
+.reservation-content input{
+    font-weight: 600;
+    font-size: 16px;
+    font-family: var(--urbanist);
+    color: rgba(255, 255, 255, 0.8);
+}
+
+.reservation-content button{
+    margin-top: 56px;
+    font-weight: 700;
+    font-size: 18px;
+    font-family: var(--inter-family);
+    text-transform: uppercase;
+    color: #FFFFFF;
+    background: #C99E71;
+    padding: 20px 36px 18px 36px;
+    cursor: pointer;
+    transition: .3s;
+    border: 1px solid #C99E71;
+    border-radius: 4px;
+}
+
+.reservation-content button:hover{
+    background-color: transparent;
+}
+
+/* testimonial */
+
+.testimonial{
+    margin-top: 140px;
+}
+
+.testimonial .testimonial-top{
+    text-align: center;
+    font-weight: 600;
+    font-size: 18px;
+    font-family: var(--urbanist);
+    color: #C99E71;
+    margin-bottom: 56px;
+}
+
+.testimonial-top h1{
+    margin-top: 6px;
+    font-weight: 400;
+    font-size: 48px;
+    font-family: var(--righteous);
+    color: #FFFFFF;
+}
+
+.testimonial-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.testimonial-container .testimonial-box{
+    background: #1C1814;
+    width: 366px;
+}
+
+.testimonial-box .testimonial-box-content{
+    padding: 20px 24px 24px 24px;
+}
+
+.testimonial-box-content .testimonial-box-content-top{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-family: var(--urbanist);
+}
+
+.testimonial-box-content-top h2{
+    font-weight: 500;
+    font-size: 18px;
+    color: #FFFFFF;
+}
+
+.testimonial-box-content-top h2 span{
+    color: #C99E71;
+}
+
+.testimonial-box-content-top p{
+    font-weight: 500;
+    font-size: 18px;
+    color: #FFFFFF;
+}
+
+.testimonial-box-content > h2{
+    font-weight: 400;
+    font-size: 20px;
+    text-transform: capitalize;
+    font-family: var(--righteous);
+    color: #FFFFFF;
+    margin: 16px 0 33px 0;
+}
+
+.testimonial-box-content .testimonial-box-footer{
+    display: flex;
+    align-items: center;
+    gap: 13px;
+}
+
+.testimonial-box-footer a{
+    font-weight: 500;
+    font-size: 16px;
+    color: #C99E71;
+    font-family: var(--urbanist);
+    transition: .3s;
+}
+
+.testimonial-box-footer a:hover{
+    color: #FFFFFF;
+}
+
+/* footer */
+
+footer{
+    margin-top: 140px;
+    font-family: var(--urbanist);
+}
+
+.footer-top{
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    padding-bottom: 72px;
+}
+
+.footer-top a{
+    font-weight: 500;
+    font-size: 20px;
+    color: #FFFFFF;
+    transition: .3s;
+}
+
+.footer-top a:hover{
+    color: #C99E71;
+}
+
+.footer-top form{
+    margin-left: 40px;
+    position: relative;
+}
+
+.footer-top form input{
+    font-weight: 500;
+    font-size: 16px;
+    text-transform: capitalize;
+    opacity: 0.8;
+    background: #302a24;
+    color: #FFFFFF;
+    border-radius: 36px;
+    padding: 26px 12px 26px 28px;
+    border: none;
+    width: 328px;
+}
+
+.footer-top form input::placeholder{
+    color: #FFFFFF;
+}
+
+.footer-top form img{
+    background: #C99E71;
+    box-shadow: 0px 22px 44px rgba(201, 158, 113, 0.2);
+    border-radius: 50%;
+    padding: 16px;
+    cursor: pointer;
+    position: absolute;
+    top: 8px;
+    right: 8px;
+}
+
+.footer-bottom{
+    margin: 0 -180px 0 -180px;
+    text-align: center;
+    background: #1C1814;
+    padding: 32px 0;
+    font-weight: 500;
+    font-size: 14px;
+    color: #FFFFFF;
+}
